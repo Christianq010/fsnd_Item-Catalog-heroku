@@ -32,10 +32,10 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM. Yo
   ``` 
   sudo apt-get install git
   sudo apt-get install ruby-full
-  wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh9 | sh
+  wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
   sudo gem install foreman
   ```
-  * Create a file called `Procfile` and open it in the editor and add following line and save it
+  * Create a file called `Procfile` with `vi Procfile` and open it in the editor and add following line and save it
   ```
   web: gunicorn project:app
   ```
