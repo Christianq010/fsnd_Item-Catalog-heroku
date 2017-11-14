@@ -537,11 +537,13 @@ def catalogJSON():
 
 
 # if executed via python interpreter run this function
-if __name__ == '__main__':
-    # Secret key for flask message flashing (sessions)
-    app.secret_key = 'super_secret_key'
-    # reload server when code change detected and run debug in browser
-    app.debug = True
-    # use to run local server with our application
-    # special config for vagrant machine by making our host publicly available
-    app.run(host='0.0.0.0', port=5000)
+# if __name__ == '__main__':  
+
+# Secret key for flask message flashing (sessions)
+app.secret_key = 'super_secret_key'
+# reload server when code change detected and run debug in browser
+app.debug = True
+
+# use to run local server with our application
+# special config for vagrant machine by making our host publicly available
+# app.run(host='0.0.0.0', port=5000)
