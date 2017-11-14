@@ -1,6 +1,8 @@
 # Item Catalog
 ==============================================
 
+URL - https://fsnd-item-catalog-app.herokuapp.com/catalog/
+
 ## Description
 
 > This repository contains instructions to setting up a Web application that queries a database and then dynamically generates complete web pages and API endpoints on the Heroku Service.
@@ -84,20 +86,16 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM. Yo
   git push heroku master 
   ```
 
+### Troubleshooting
+* Add () to print statements in `project.py`, error noted in heroku dyno error logs during deployment.
 
 ### Create Google Client ID & Secret
 * Create and then Go to your app's page in the Google APIs Console — https://console.developers.google.com/apis
-* From Credentials from the menu on the left.
-* Create an OAuth 2.0 Client ID.
-* Choose Web application.
 * You can then set the authorized JavaScript origins to `http://localhost:5000`.
 
 ### Create Facebook Client and Secret
-* Create and then Go to your app's page in the Facebook Developers Console — https://developers.facebook.com/apps/
-* Go to Settings from the menu on the left and select Add Product.
-* Create Facebook Log in, configure Client OAuth Settings and Valid OAuth redirect URIs (http://localhost:5000) etc and save changes.
-* Add your relevant APP ID to the Facebook Log in Script in `login.html`.
-* Set the APP ID and APP Secret in the `fb_client_secrets.json` file.
+* Go to your app's page in the Facebook Developers Console — https://developers.facebook.com/apps/
+* Configure Client OAuth Settings and Valid OAuth redirect URIs (http://localhost:5000, https://fsnd-item-catalog-app.herokuapp.com/catalog/) etc and save changes.
 
 ### API Endpoints
 * Show all Catalog names in JSON - `/catalog/JSON`.
@@ -106,7 +104,7 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM. Yo
 
 
 ### Resources
-* Udacity FSND Webcast on setting up Vagrant - https://www.youtube.com/watch?v=djnqoEO2rLc
+* Udacity Forum post of Heroku Deployment - https://discussions.udacity.com/t/steps-to-deploy-your-app-in-heroku-for-free/46351
 * Refactor Code to Python PEP 8 style guide
   * http://pep8online.com/checkresult
   * https://stackoverflow.com/questions/10739843/how-should-i-format-a-long-url-in-a-python-comment-and-still-be-pep8-compliant
