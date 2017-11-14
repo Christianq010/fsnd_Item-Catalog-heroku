@@ -46,7 +46,7 @@ APPLICATION_NAME = 'Item Catalog'
 app = Flask(__name__)
 
 # create Session and connect to DB
-engine = create_engine('sqlite:///catalogitems.db')
+engine = create_engine('postgres://jaehudkkwfzerl:845c5f6b7e9e9fe885d85565b15ff1229bdb55bde3a0ea885b06eb674ebe8984@ec2-176-34-111-152.eu-west-1.compute.amazonaws.com:5432/d48l6m5e8cmivs')
 Base.metadata.bind=engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
