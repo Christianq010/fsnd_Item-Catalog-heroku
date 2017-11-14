@@ -63,6 +63,12 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM. Yo
   ```python
   menuItems = relationship("MenuItem", cascade = "all, delete-orphan")
   ```
+  * On our vagrant machine, run the following files - `python database_setup.py`, `python data.py`.
+  _If both of these files run without error, the app is ready to be run locally_,
+
+* Run our app on http://localhost:5000 with vagrant using `foreman start web` .
+  _If it runs successfully, now its ready for deployment in Heroku._
+
 
 ### Create Google Client ID & Secret
 * Create and then Go to your app's page in the Google APIs Console — https://console.developers.google.com/apis
