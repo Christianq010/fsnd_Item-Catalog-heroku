@@ -69,6 +69,21 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM. Yo
 * Run our app on http://localhost:5000 with vagrant using `foreman start web` .
   _If it runs successfully, now its ready for deployment in Heroku._
 
+## Deployment on Heroku
+* On local machine, in the VM
+* Log in to Heroku with `heroku login`, enter your email and password.
+* Use the Heroku dashboard to connect heroku app to the github repo and automate deployments with the master branch
+ * git init
+ * `heroku git:remote -a your-heroku-app-name`
+ * It should display the following `set git remote heroku to https://git.heroku.com/fsnd-item-catalog-app.git`.
+ * Check git remote status with `git remote -v`
+ * Make a commit and push (notice there is a dot after git add)
+  ```git
+  git add . 
+  git commit -am "First Commit"
+  git push heroku master 
+  ```
+
 
 ### Create Google Client ID & Secret
 * Create and then Go to your app's page in the Google APIs Console — https://console.developers.google.com/apis
