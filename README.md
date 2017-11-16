@@ -88,6 +88,11 @@ We're using tools called Vagrant and VirtualBox to install and manage the VM. Yo
 
 ### Troubleshooting
 * Add () to print statements in `project.py`, error noted in heroku dyno error logs during deployment.
+* Newly created Heroku Python applications default to the Python 3.6.2 runtime, to change this add the follwing to the root folder and push to heroku git master.
+  $ cat runtime.txt
+  ```
+  python-2.7.14
+  ```
 
 ### Create Google Client ID & Secret
 * Create and then Go to your app's page in the Google APIs Console — https://console.developers.google.com/apis
